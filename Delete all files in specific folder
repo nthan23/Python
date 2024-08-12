@@ -1,0 +1,12 @@
+import os
+
+path = "./"
+
+screenshot_folderpath = r"C:\Users\lee65\OneDrive\Pictures\Screenshots"
+
+for name in os.listdir(screenshot_folderpath):
+    delfile = os.path.join(screenshot_folderpath, name)
+    if os.path.isfile(delfile):
+        os.remove(delfile)
+
+# print(delfile)
